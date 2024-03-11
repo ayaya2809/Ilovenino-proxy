@@ -1,0 +1,71 @@
+.search-input {
+    border: solid 1px #494646;
+}
+
+.search-input:hover {
+    border: solid 1px #fff;
+}
+
+/* video play - animation */
+@keyframes scale {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+#play {
+    animation: scale 0.8s infinite;
+    border: solid 1px #fff;
+    border-radius: 50%;
+}
+
+/* Anime Player */
+.anime-infor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.anime-srv {
+    border: solid 1px #ffffff80;
+}
+
+
+.anime-list-ss1,
+.anime-list-ss2,
+.anime-list-ss3,
+.anime-list-ss4,
+.anime-list-ss5,
+.anime-list-ss6 {
+    display: flex;
+    margin-top: 4px;
+    gap: 6px;
+}
+
+.anime-list-ss2,
+.anime-list-ss3,
+.anime-list-ss4,
+.anime-list-ss5,
+.anime-list-ss6 {
+    display: none;
+}
+
+.anime, .part {
+    cursor: pointer;
+    color: var(--bs-light);
+    border: solid 1px #ffffff80;
+    border-radius: 8px;
+}
+
+.part {
+    font-weight: bold;
+}
+
+.part:hover,
+.anime:hover {
+    background-color: var(--bs-red);
+}
+
+.server-detail::before {
+    content: "Chi tiết từng Server";
+}

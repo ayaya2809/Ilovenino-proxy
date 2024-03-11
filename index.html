@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="title" content="Anime FullHD - IloveNino" />
+  <title>ILoveNino</title>
+  <meta property="og:title" content="Anime Vietsub - ILoveNino.id.vn/anime/" />
+  <meta name="description" content="Xem anime Remake Full HD" />
+  <meta name="keywords"
+    content="anime, animetv, anime hay, anime vietsub, anime vietsub online, xem anime, anime tv, download anime vietsub, anime hd, tai anime, anime moi nhat, phim anime, hoat hinh nhat, anime tv" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Xem anime Full HD. Tất cả đều siêu nét!" />
+  <meta property="og:url" content="https://ilovenino.id.vn/" />
+  <link rel="canonical" href="https://ilovenino.id.vn/" />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nơi tôi dành tình yêu cho Nino" />
+  <title>I love Nino</title>
+  <link rel="stylesheet" href="./tailwind/tw-in.css" />
+  <link rel="stylesheet" href="./tailwind/tw-out.css" />
+  <link rel="icon" href="./assets/img/nino-icon.webp" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+
+<body class="w-full bg-[#D7EFFF] sm:bg-[url('/assets/img/background.webp')] sm:bg-center">
+  <header class="border-b border-b-[#f1dfdf] sm:border-none">
+    <!-- Mobile -->
+    <div class="flex items-center sm:hidden">
+      <!-- icon menu -->
+      <div class="rounded-full cursor-pointer w-8 h-8 p-1 hover:bg-[#beb6b6]"><img
+          onclick="window.location.href='/index.html'" src="./assets/img/menu-outline.svg" alt="..." />
+      </div>
+      <!-- logo ilovenino -->
+      <div class="h-4 ml-3 2xl:ml-6 2xl:mr-0 2xl:h-7 cursor-pointer">
+        <img id="logo-text" src="./assets/img/logo-ilovenino.svg" alt="" />
+      </div>
+    </div>
+
+    <!-- SM -->
+    <div class="hidden sm:flex justify-end items-center h-[120px] text-[20px] mr-9 sm:mr-3">
+      <img class="w-[90px] h-[60px]" src="/assets/img/nino-logo-svg.webp" alt="..." />
+      <div class="hover:underline px-[10px]"><a href="">Home</a></div>
+      <div class="hover:underline px-[10px]"><a href="./anime/index.html">Anime</a></div>
+      <div class="hover:underline px-[10px]"><a href="./waifu/waifu.html">Manga</a></div>
+      <div class="hover:underline px-[10px]"><a href="./anime/index.html">Light Novel</a></div>
+      <div class="hover:underline px-[10px]"><a href="./waifu/waifu.html">My Waifu</a></div>
+      <img class="w-6 h-6 cursor-pointer" src="/assets/img/search-outline-black.svg" alt="">
+    </div>
+
+  </header>
+
+  <!-- Content Mobile -->
+  <div class="grid mt-4 px-8 gap-y-4 sm:hidden">
+    <!-- Anime -->
+    <div class="cursor-pointer" onclick="window.location.href='/anime/index.html'">
+      <div class="font-bold text-[20px] cursor-pointer text-red-700">Anime</div>
+      <img class="rounded-md" src="/assets/img/small1.webp" alt="..." />
+    </div>
+
+    <!-- Manga -->
+    <div class="cursor-pointer" onclick="window.location.href='/anime/index.html'">
+      <div class="font-bold text-[20px] cursor-pointer text-red-700">Manga</div>
+      <img class="rounded-md" src="/assets/img/small2.webp" alt="..." />
+    </div>
+
+    <!-- Light Novel -->
+    <div class="cursor-pointer" onclick="window.location.href='/anime/index.html'">
+      <div class="font-bold text-[20px] cursor-pointer text-red-700">Light Novel</div>
+      <img class="rounded-md" src="/assets/img/small3.webp" alt="..." />
+    </div>
+
+    <!-- Waifu -->
+    <div class="cursor-pointer" onclick="window.location.href='/waifu/waifu.html'">
+      <div class="font-bold text-[20px] cursor-pointer text-red-700">Waifu</div>
+      <img class="rounded-md" src="/assets/img/small3.webp" alt="..." />
+    </div>
+  </div>
+
+  <!-- Content SM -->
+  <div class="hidden sm:block mt-5">
+    <div class="flex content-center items-end flex-col absolute top-[30vh] right-3">
+      <p class="text-[28px] font-normal">Explore</p>
+      <p class="text-[46px] font-semibold">Anime's</p>
+      <p class="text-[36px] font-light">Mesmerizing Beauty</p>
+      <div class="w-[300px] h-0.5 bg-black absolute -bottom-3"></div>
+    </div>
+    <div class="flex items-end relative">
+      <img class="block w-[400px]" src="/assets/img/nino-mobile.webp" alt="...">
+      <div class="ml-1 absolute">
+        <p class="w-32 px-3 py-[6px] bg-[#eb1712] text-white text-[13px] font-semibold rounded-3xl">NINO NAKANO</p>
+        <p class="">This is my best waifu</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carousel SM-->
+  <div class="carousel w-[320px] max-w-[400px] object-contain py-10 relative left-1/2 -translate-x-1/2">
+    <div id="slide1" class="carousel-item relative w-full">
+      <img src="/assets/img/small1.webp" class="w-full" />
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide4" class="btn btn-circle">❮</a> 
+        <a href="#slide2" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <div id="slide2" class="carousel-item relative w-full">
+      <img src="/assets/img/small2.webp" class="w-full" />
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide1" class="btn btn-circle">❮</a> 
+        <a href="#slide3" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <div id="slide3" class="carousel-item relative w-full">
+      <img src="/assets/img/small3.webp" class="w-full" />
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide2" class="btn btn-circle">❮</a> 
+        <a href="#slide4" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <div id="slide4" class="carousel-item relative w-full">
+      <img src="/assets/img/small3.webp" class="w-full" />
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide3" class="btn btn-circle">❮</a> 
+        <a href="#slide1" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+  </div>
+  <!-- Carousel - End -->
+
+
+
+
+
+  <!-- Footer -->
+  <div></div>
+
+</body>
+
+</html>

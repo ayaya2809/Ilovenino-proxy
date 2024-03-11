@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --bs-red: #dc3545;
+    --bs-black: #000;
+    --bs-gray: #6c757d;
+    --bs-gray-500: #adb5bd;
+    --bs-light: #f8f9fa;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #000;
+}
+
+/* Tooltip Top*/
+.has-tooltip {
+     @apply relative;
+}
+    
+.tooltip {
+    @apply w-max invisible absolute rounded shadow-lg py-0.5 px-1 bg-[#333] text-white text-[12px] bottom-[110%] left-1/2 -translate-x-1/2;
+}
+    
+.has-tooltip:hover .tooltip {
+    @apply visible z-50;
+}
+
+.icon-menu:hover {
+    background-color: #ffffff10;
+  }
+
+  .search-input {
+    border: solid 1px #444343;
+  }
+
+  .search-input:hover {
+    border: solid 1px #fff;
+  }
+
+  #logo-text {
+    height: inherit;
+  }
+
+  .selected {
+    background-color: var(--bs-red);
+  }
+
+  .anime-name {
+    color: var(--bs-red);
+  }
+
+  .frame-video {
+    display: none;
+  }

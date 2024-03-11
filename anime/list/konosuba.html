@@ -1,0 +1,406 @@
+<!DOCTYPE htm4>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Konosuba">
+  <title>Konosuba</title>
+  <!-- <link rel="stylesheet" href="./../../tailwind/styles.css"> -->
+  <link rel="stylesheet" href="./../../tailwind/tw-out.css">
+  <link rel="stylesheet" href="../../assets/css/anime-video.css">
+  <link rel="icon" href="../../assets/img/nino-icon.webp">
+
+  <script src="https://connect.facebook.net/vi_VN/sdk.js?hash=94df6fdf39299e836559f37b6940f489" async="" crossorigin="anonymous"></script>
+  <meta property="fb:app_id" content="1746100899232283">
+  <meta name="csrf-token" content="MTcwOTk1NTE5MkdMSE0wTkVMREo5TDVKNUtJSjRMMUo5TTZMNEw5Sg==">
+  <meta name="csrf-token" content="MTcwOTk3MTk1NTNOR01FTDhNRUpCTjNNSEoxTjZKRko5SjRKNU5BSg==">
+
+
+  <link rel="stylesheet" href="/assets/player/playerr.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body class="h-[3000px] bg-[#121212]">
+  <!-- Header -->
+  <header class="flex items-center relative h-8 md:h-9 xl:h-10 2xl:h-14 md:px-4 2xl:px-5 bg-[#2c2a2a]">
+    <!-- icon menu -->
+    <div class="rounded-full cursor-pointer w-8 h-8 p-1 hover:bg-[#ffffff10]">
+      <img src="/assets/img/navbar-menu.svg" alt="">
+    </div>
+
+    <!-- logo ilovenino -->
+    <div class="h-4 ml-3 2xl:ml-6 2xl:mr-0 2xl:h-7 cursor-pointer">
+      <img id="logo-text" src="/assets/img/logo-ilovenino.svg" onclick="window.location.href='./../index.html'" alt="...">
+    </div>
+
+    <div class="flex items-center w-5/12 h-6 md:h-7 2xl:h-10 relative mx-auto">
+      <!-- icon search -->
+      <div class="w-4 h-4 ml-1 md:w-6 md:h-6 2xl:h-10 2xl:w-10 2xl:p-2 absolute">
+        <img src="/assets/img/search-outline.svg" alt="">
+      </div>
+      <div><input
+          class="search-input w-full h-full text-[13px] xl:text-[17px] 2xl:text-[18px] pl-10 rounded-lg bg-transparent outline-none text-white absolute top-0 right-auto"
+          type="text" placeholder="Tìm anime...">
+      </div>
+    </div>
+
+    <!-- dark mode -->
+    <div class="hidden h-full">
+      <div class="cursor-pointer hover:bg-gray-600"><svg class="w-3 h-3 2xl:w-6 2xl:h-6"
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path fill="none" stroke="#ccc" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"
+            d="M256 48v48M256 416v48M403.08 108.92l-33.94 33.94M142.86 369.14l-33.94 33.94M464 256h-48M96 256H48M403.08 403.08l-33.94-33.94M142.86 142.86l-33.94-33.94" />
+          <circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" stroke-linecap="round"
+            stroke-miterlimit="10" stroke-width="32" />
+        </svg></div>
+      <div class="cursor-pointer hover:bg-gray-600"><svg class="w-3 h-3 2xl:w-6 2xl:h-6"
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path
+            d="M160 136c0-30.62 4.51-61.61 16-88C99.57 81.27 48 159.32 48 248c0 119.29 96.71 216 216 216 88.68 0 166.73-51.57 200-128-26.39 11.49-57.38 16-88 16-119.29 0-216-96.71-216-216z"
+            fill="none" stroke="#ccc" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+        </svg></div>
+    </div>
+  </header>
+
+  <!-- Content -->
+
+  <!-- Breadcrumb -->
+
+  <!-- End Breadcrumb -->
+
+  <div class="anime-infor text-3xl mx-0 my-3 text-center text-[var(--bs-red)] font-semibold">Konosuba</div>
+
+  <div
+    class="anime-player flex sm:w-[80vw] sm:h-[45vw] w-[96vmin] h-[54vmin] rounded-md overflow-hidden m-auto border border-solid border-[#ffffff20] bg-[#1e1b1b]">
+    <iframe class="frame-video" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+    <div class="play-wait p-3 cursor-pointer font-bold text-white text-2xl md:text-3xl m-auto hover:cursor-default"><svg
+        id="play" class="w-14 h-14 md:w-20 md:h-20 mb-3 md:mb-6 m-auto" xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 240 240" focusable="false">
+        <path fill="#c83200"
+          d="M62.8,199.5c-1,0.8-2.4,0.6-3.3-0.4c-0.4-0.5-0.6-1.1-0.5-1.8V42.6c-0.2-1.3,0.7-2.4,1.9-2.6c0.7-0.1,1.3,0.1,1.9,0.4l154.7,77.7c2.1,1.1,2.1,2.8,0,3.8L62.8,199.5z">
+        </path>
+      </svg>Vui lòng chọn tập phim</div>
+  </div>
+
+  <!-- Chi tiet Server + Download -->
+  <div class="flex items-center h-7 md:h-[31px] mt-3">
+    <div class="mx-2 md:mx-10 text-white text-[12px] md:text-[14px]" id="server-details">
+      <input type="checkbox"
+        class="server-detail w-[132px] text-center p-1 bg-slate-600 border border-solid border-[#ffffff30] appearance-none rounded-md hover:bg-green-800 checked:before:content-['Đóng'] hover:cursor-pointer">
+      <span class="hidden">- Server HEL nên xem trên trình duyệt đã cài chặn quảng cáo<br></span>
+      <span class="hidden">- Server DLM nên xem trên máy tính, điện thoại xem sẽ bị tự động chuyển về độ phân giải HD
+        (720p)</span>
+    </div>
+
+    <!-- Download -->
+    <div><button
+        onclick="window.open('https://pr0x9x-my.sharepoint.com/:f:/g/personal/ngocdao_pr0x9x_onmicrosoft_com/EjCTod3g-b5BqTxoQmCt8soBCEycQDJud8Joy8A_6or-pQ?e=J8RtrK', '_blank')"
+        class="p-1 mx-2 md:mx-10 text-white text-[12px] md:text-[14px] bg-slate-600 border border-solid border-[#ffffff30] rounded-md hover:bg-green-800">Download
+        Anime</button></div>
+  </div>
+
+  <!-- Server & Season -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:mx-8 bg-[#404242] rounded-lg m-2">
+    <!-- Server -->
+    <div class="m-2 flex gap-1 sm:gap-2 text-center">
+      <p class="w-28 h-[34px] leading-[26px] text-[12px] sm:text-[16px] bg-black rounded-md font-semibold p-1 text-white">Chọn
+        Server</p>
+
+      <div class="anime-srv has-tooltip h-[34px] px-1 py-0.5 rounded-lg cursor-pointer bg-gray-700 hover:bg-green-600 text-white">
+        HEL
+        <span class="tooltip">Full HD, có quảng cáo</span>
+      </div>
+
+      <div class="anime-srv has-tooltip h-[34px] px-1 py-0.5 rounded-lg cursor-pointer bg-gray-700 hover:bg-green-600 text-white">
+        DLM
+        <span class="tooltip">Full HD với PC, HD với mobile</span>
+      </div>
+
+      <div class="anime-srv has-tooltip h-[34px] px-1 py-0.5 rounded-lg cursor-pointer bg-gray-700 hover:bg-green-600 text-white">
+        FB
+        <span class="tooltip">Up lên FB bị mờ vl nên chưa dùng</span>
+      </div>
+    </div>
+
+    <!-- Season -->
+    <div class="anime-part flex flex-wrap items-center m-2 gap-1 sm:gap-2 text-white text-center">
+      <p
+        class="w-28 h-[34px] leading-[26px] text-[12px] text-white text-center sm:text-[16px] bg-black rounded-md font-semibold p-1">
+        Chọn Season</p>
+      <div class="part p-1 h-[34px] bg-[#3a3434]" onclick="changePart('',1)">Season 1</div>
+      <div class="part p-1 h-[34px] bg-[#3a3434]" onclick="changePart('',2)">Ova 1</div>
+      <div class="part p-1 h-[34px] bg-[#3a3434]" onclick="changePart('',3)">Season 2</div>
+      <div class="part p-1 h-[34px] bg-[#3a3434]" onclick="changePart('',4)">Ova 2</div>
+      <div class="part p-1 h-[34px] bg-[#3a3434]" onclick="changePart('',5)">Movie</div>
+      <div class="part p-1 h-[34px] bg-[#3a3434]" onclick="changePart('',6)">Spin-off</div>
+    </div>
+  </div>
+
+
+  <div class="lists anime-list-ss1 flex-wrap mx-2 mt-4 md:mx-10 text-center">
+    <div class="anime bg-[#3a3434] p-1 min-w-[60px]"
+      onclick="changeVideo('https://helvid.com/play/index/a9337af1aaa9',1)">Tập 1</div>
+    <div class="anime bg-[#3a3434] p-1 min-w-[60px]"
+      onclick="changeVideo('https://helvid.com/play/index/a9337af1aaa9',2)">Tập 2</div>
+    <div class="anime bg-[#3a3434] p-1 min-w-[60px]"
+      onclick="changeVideo('https://helvid.com/play/index/813e8ce8aefd',3)">Tập 3</div>
+    <div class="anime bg-[#3a3434] p-1 min-w-[60px]"
+      onclick="changeVideo('https://helvid.com/play/index/5eb33fddbddd',4)">Tập 4</div>
+    <div class="anime bg-[#3a3434] p-1 min-w-[60px]"
+      onclick="changeVideo('https://helvid.com/play/index/562d2ddd0bb2',5)">Tập 5</div>
+    <div class="anime bg-[#3a3434] p-1 min-w-[60px]"
+      onclick="changeVideo('https://helvid.com/play/index/375bae8daf2a',6)">Tập 6</div>
+    <div class="anime bg-[#3a3434] p-1 min-w-[60px]"
+      onclick="changeVideo('https://helvid.com/play/index/25d51cb270f7',7)">Tập 7</div>
+    <div class="anime bg-[#3a3434] p-1 min-w-[60px]"
+      onclick="changeVideo('https://helvid.com/play/index/5e446c4ab2f3',8)">Tập 8</div>
+    <div class="anime bg-[#3a3434] p-1 min-w-[60px]"
+      onclick="changeVideo('https://helvid.com/play/index/e62a537febae',9)">Tập 9</div>
+    <div class="anime bg-[#3a3434] p-1 min-w-[60px]"
+      onclick="changeVideo('https://helvid.com/play/index/990b9e4de879',10)">Tập 10_End</div>
+  </div>
+
+  <div class="lists anime-list-ss2 flex-wrap mx-2 mt-4 md:mx-10 text-center">
+    <div class="anime bg-[#3a3434] p-1 min-w-[60px]"
+      onclick="changeVideo('https://helvid.com/play/index/3a757e431901',1)">Ova 1</div>
+  </div>
+
+  <div class="lists anime-list-ss3 flex-wrap mx-2 mt-4 md:mx-10 text-center">
+    <div class="anime bg-[#3a3434] p-1 min-w-[60px]"
+      onclick="changeVideo('https://helvid.com/play/index/ed0721554a66',1)">Tập 1</div>
+    <div class="anime bg-[#3a3434] p-1 min-w-[60px]"
+      onclick="changeVideo('https://helvid.com/play/index/1dfc84ef6ee4',2)">Tập 2</div>
+    <div class="anime bg-[#3a3434] p-1 min-w-[60px]"
+      onclick="changeVideo('https://helvid.com/play/index/e0ea76ecb8ca',3)">Tập 3</div>
+    <div class="anime bg-[#3a3434] p-1 min-w-[60px]"
+      onclick="changeVideo('https://helvid.com/play/index/d3b6909e957c',4)">Tập 4</div>
+    <div class="anime bg-[#3a3434] p-1 min-w-[60px]"
+      onclick="changeVideo('https://helvid.com/play/index/1066fb4f5b62',5)">Tập 5</div>
+    <div class="anime bg-[#3a3434] p-1 min-w-[60px]"
+      onclick="changeVideo('https://helvid.com/play/index/1066fb4f5b62',6)">Tập 6</div>
+    <div class="anime bg-[#3a3434] p-1 min-w-[60px]"
+      onclick="changeVideo('https://helvid.com/play/index/1066fb4f5b62',7)">Tập 7</div>
+    <div class="anime bg-[#3a3434] p-1 min-w-[60px]"
+      onclick="changeVideo('https://helvid.com/play/index/1066fb4f5b62',8)">Tập 8</div>
+    <div class="anime bg-[#3a3434] p-1 min-w-[60px]"
+      onclick="changeVideo('https://helvid.com/play/index/1066fb4f5b62',9)">Tập 9</div>
+    <div class="anime bg-[#3a3434] p-1 min-w-[60px]"
+      onclick="changeVideo('https://helvid.com/play/index/1066fb4f5b62',10)">Tập 10</div>
+  </div>
+
+  <div class="lists anime-list-ss4 flex-wrap mx-2 mt-4 md:mx-10 text-center">
+    <div class="anime bg-[#3a3434] p-1 min-w-[60px]"
+      onclick="changeVideo('https://helvid.com/play/index/ed0721554a66',1)">Ova 2</div>
+  </div>
+
+  <div class="lists anime-list-ss5 flex-wrap mx-2 mt-4 md:mx-10 text-center">
+    <div class="anime bg-[#3a3434] p-1 min-w-[60px]"
+      onclick="changeVideo('https://helvid.com/play/index/ed0721554a66',1)">Movie</div>
+  </div>
+
+  <div class="lists anime-list-ss6 flex-wrap mx-2 mt-4 md:mx-10 text-center">
+    <div class="anime bg-[#3a3434] p-1 min-w-[60px]"
+      onclick="changeVideo('https://helvid.com/play/index/ed0721554a66',1)">Tập 1</div>
+    <div class="anime bg-[#3a3434] p-1 min-w-[60px]"
+      onclick="changeVideo('https://helvid.com/play/index/1dfc84ef6ee4',2)">Tập 2</div>
+    <div class="anime bg-[#3a3434] p-1 min-w-[60px]"
+      onclick="changeVideo('https://helvid.com/play/index/e0ea76ecb8ca',3)">Tập 3</div>
+    <div class="anime bg-[#3a3434] p-1 min-w-[60px]"
+      onclick="changeVideo('https://helvid.com/play/index/d3b6909e957c',4)">Tập 4</div>
+    <div class="anime bg-[#3a3434] p-1 min-w-[60px]"
+      onclick="changeVideo('https://helvid.com/play/index/1066fb4f5b62',5)">Tập 5</div>
+  </div>
+
+
+  <!-- Js -->
+  <script src="/anime/anime-video.js"></script>
+
+  <!-- Copy full HTML -->
+  <div class="container show-controls text-white">
+    <div class="wrapper">
+      <div class="video-timeline">
+        <div class="progress-area">
+          <span>00:00</span>
+          <div class="progress-bar"></div>
+        </div>
+      </div>
+      <ul class="video-controls">
+        <li class="options left">
+          <button class="volume"><i class="fa-solid fa-volume-high"></i></button>
+          <input type="range" min="0" max="1" step="any">
+          <div class="video-timer">
+            <p class="current-time">00:00</p>
+            <p class="separator"> / </p>
+            <p class="video-duration">00:00</p>
+          </div>
+        </li>
+        <li class="options center">
+          <button class="skip-backward"><i class="fas fa-backward"></i></button>
+          <button class="play-pause"><i class="fas fa-play"></i></button>
+          <button class="skip-forward"><i class="fas fa-forward"></i></button>
+        </li>
+        <li class="options right gap-3">
+          <a href="https://ilovenino.id.vn/" target="_blank"><img class="h-3" src="/assets/img/logo-ilovenino.svg"
+              alt="..."></a>
+          <div class="playback-content">
+            <button class="playback-speed"><span class="material-symbols-rounded">slow_motion_video</span></button>
+            <ul class="speed-options">
+              <li data-speed="2">2x</li>
+              <li data-speed="1.5">1.5x</li>
+              <li data-speed="1" class="active">Normal</li>
+              <li data-speed="0.75">0.75x</li>
+              <li data-speed="0.5">0.5x</li>
+            </ul>
+          </div>
+          <button class="fullscreen"><i class="fa-solid fa-expand"></i></button>
+        </li>
+      </ul>
+    </div>
+    <!-- <video disablePictureInPicture oncontextmenu="return false" src="https://scontent.cdninstagram.com/v/t66.30100-16/10000000_1906801786404815_6911308978250460124_n.mp4?_nc_cat=104&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImlnLXhwdmRzLmNsaXBzLmMyLUMzLmRhc2hfYmFzZWxpbmVfMTA4MHBfdjEifQ%3D%3D&_nc_ohc=oR-YWlA6NX0AX_P2lH_&_nc_ht=scontent.cdninstagram.com&oh=00_AfAiXLrf6DSBNozFzC5yRv6-8kbiUBRcIJRamh1ueLhrfg&oe=65F0E89E"></video> No Audio -->
+    <!-- <video disablePictureInPicture oncontextmenu="return false" src="https://scontent.cdninstagram.com/v/t66.30100-16/10000000_944442297190031_3141962270894976964_n.mp4?_nc_cat=110&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImlnLXhwdmRzLmNsaXBzLmMyLUMzLmRhc2hfYmFzZWxpbmVfMTA4MHBfdjEifQ%3D%3D&_nc_ohc=ZOQk38q2O1UAX-d3fae&_nc_ht=scontent.cdninstagram.com&oh=00_AfDYypV7qNJcHKoym4lWR3Ho5BR4Kx2TSQ2m6olV9jqFCg&oe=65F088D1"></video> No Audio -->
+    <!-- Ngon lành dùng thẻ video, bấm dùng link trực tiếp lỗi, copy link thì ok -->
+    <video disablePictureInPicture oncontextmenu="return false" src="https://scontent.cdninstagram.com/v/t66.30100-16/10000000_1906801786404815_6911308978250460124_n.mp4?_nc_cat=104&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImlnLXhwdmRzLmNsaXBzLmMyLUMzLmRhc2hfYmFzZWxpbmVfMTA4MHBfdjEifQ%3D%3D&_nc_ohc=oR-YWlA6NX0AX_VuZGs&_nc_ht=scontent.cdninstagram.com&oh=00_AfCuyVaM-oT8u0G9ijVq45wF8LBqGKXE2r5XUe_41kI3pw&oe=65F0E89E"></video>
+                                                                          
+  </div>
+
+
+  <!-- Copy Full JS -->
+  <script>
+    const container = document.querySelector(".container"),
+      mainVideo = container.querySelector("video"),
+      videoTimeline = container.querySelector(".video-timeline"),
+      progressBar = container.querySelector(".progress-bar"),
+      volumeBtn = container.querySelector(".volume i"),
+      volumeSlider = container.querySelector(".left input");
+    currentVidTime = container.querySelector(".current-time"),
+      videoDuration = container.querySelector(".video-duration"),
+      skipBackward = container.querySelector(".skip-backward i"),
+      skipForward = container.querySelector(".skip-forward i"),
+      playPauseBtn = container.querySelector(".play-pause i"),
+      speedBtn = container.querySelector(".playback-speed span"),
+      speedOptions = container.querySelector(".speed-options"),
+      fullScreenBtn = container.querySelector(".fullscreen i");
+
+    let timer;
+    const hideControls = () => {
+      if (mainVideo.paused) return;
+      timer = setTimeout(() => {
+        container.classList.remove("show-controls");
+      }, 3000);
+    }
+    hideControls();
+
+    container.addEventListener("mousemove", () => {
+      container.classList.add("show-controls");
+      clearTimeout(timer);
+      hideControls();
+    });
+
+    const formatTime = time => {
+      let seconds = Math.floor(time % 60),
+        minutes = Math.floor(time / 60) % 60,
+        hours = Math.floor(time / 3600);
+
+      seconds = seconds < 10 ? `0${seconds}` : seconds;
+      minutes = minutes < 10 ? `0${minutes}` : minutes;
+      hours = hours < 10 ? `0${hours}` : hours;
+
+      if (hours == 0) {
+        return `${minutes}:${seconds}`
+      }
+      return `${hours}:${minutes}:${seconds}`;
+    }
+
+    videoTimeline.addEventListener("mousemove", e => {
+      let timelineWidth = videoTimeline.clientWidth;
+      let offsetX = e.offsetX;
+      let percent = Math.floor((offsetX / timelineWidth) * mainVideo.duration);
+      const progressTime = videoTimeline.querySelector("span");
+      offsetX = offsetX < 20 ? 20 : (offsetX > timelineWidth - 20) ? timelineWidth - 20 : offsetX;
+      progressTime.style.left = `${offsetX}px`;
+      progressTime.innerText = formatTime(percent);
+    });
+
+    videoTimeline.addEventListener("click", e => {
+      let timelineWidth = videoTimeline.clientWidth;
+      mainVideo.currentTime = (e.offsetX / timelineWidth) * mainVideo.duration;
+    });
+
+    mainVideo.addEventListener("timeupdate", e => {
+      let { currentTime, duration } = e.target;
+      let percent = (currentTime / duration) * 100;
+      progressBar.style.width = `${percent}%`;
+      currentVidTime.innerText = formatTime(currentTime);
+    });
+
+    mainVideo.addEventListener("loadeddata", () => {
+      videoDuration.innerText = formatTime(mainVideo.duration);
+    });
+
+    const draggableProgressBar = e => {
+      let timelineWidth = videoTimeline.clientWidth;
+      progressBar.style.width = `${e.offsetX}px`;
+      mainVideo.currentTime = (e.offsetX / timelineWidth) * mainVideo.duration;
+      currentVidTime.innerText = formatTime(mainVideo.currentTime);
+    }
+
+    volumeBtn.addEventListener("click", () => {
+      if (!volumeBtn.classList.contains("fa-volume-high")) {
+        mainVideo.volume = 0.5;
+        volumeBtn.classList.replace("fa-volume-xmark", "fa-volume-high");
+      } else {
+        mainVideo.volume = 0.0;
+        volumeBtn.classList.replace("fa-volume-high", "fa-volume-xmark");
+      }
+      volumeSlider.value = mainVideo.volume;
+    });
+
+    volumeSlider.addEventListener("input", e => {
+      mainVideo.volume = e.target.value;
+      if (e.target.value == 0) {
+        return volumeBtn.classList.replace("fa-volume-high", "fa-volume-xmark");
+      }
+      volumeBtn.classList.replace("fa-volume-xmark", "fa-volume-high");
+    });
+
+    speedOptions.querySelectorAll("li").forEach(option => {
+      option.addEventListener("click", () => {
+        mainVideo.playbackRate = option.dataset.speed;
+        speedOptions.querySelector(".active").classList.remove("active");
+        option.classList.add("active");
+      });
+    });
+
+    document.addEventListener("click", e => {
+      if (e.target.tagName !== "SPAN" || e.target.className !== "material-symbols-rounded") {
+        speedOptions.classList.remove("show");
+      }
+    });
+
+    fullScreenBtn.addEventListener("click", () => {
+      container.classList.toggle("fullscreen");
+      if (document.fullscreenElement) {
+        fullScreenBtn.classList.replace("fa-compress", "fa-expand");
+        return document.exitFullscreen();
+      }
+      fullScreenBtn.classList.replace("fa-expand", "fa-compress");
+      container.requestFullscreen();
+    });
+
+    speedBtn.addEventListener("click", () => speedOptions.classList.toggle("show"));
+    skipBackward.addEventListener("click", () => mainVideo.currentTime -= 5);
+    skipForward.addEventListener("click", () => mainVideo.currentTime += 5);
+    mainVideo.addEventListener("play", () => playPauseBtn.classList.replace("fa-play", "fa-pause"));
+    mainVideo.addEventListener("pause", () => playPauseBtn.classList.replace("fa-pause", "fa-play"));
+    playPauseBtn.addEventListener("click", () => mainVideo.paused ? mainVideo.play() : mainVideo.pause());
+    videoTimeline.addEventListener("mousedown", () => videoTimeline.addEventListener("mousemove", draggableProgressBar));
+    document.addEventListener("mouseup", () => videoTimeline.removeEventListener("mousemove", draggableProgressBar));
+    mainVideo.addEventListener("click", () => mainVideo.paused ? mainVideo.play() : mainVideo.pause())
+  </script>
+</body>
+
+</html>
